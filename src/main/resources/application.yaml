@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      #
+      hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    #SPRING_DATASOURCE_URL environment variable will be something like -> jdbc:sqlserver://MySqlServer\\MyInstance:1433;DatabaseName=MyDbName;
+    url: jdbc:mysql://localhost:3306/kotlink_user_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 1234
+
+#log the request paylod
+logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+logback.access.enabled: false

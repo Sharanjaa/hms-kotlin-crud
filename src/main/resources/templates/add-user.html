@@ -1,0 +1,17 @@
+<form action="#" th:action="@{/adduser}" th:object="${user}" method="post">
+    <label for="firstname">First Name</label>
+    <input type="text" th:field="*{firstname}" id="First Name">
+    <span th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}"></span>
+    <label for="lastname">Last Name</label>
+    <input type="text" th:field="*{lastname}" id="Last Name">
+    <span th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}"></span>
+    <br/>
+    <label for="email">Email</label>
+    <input type="text" th:field="*{email}" id="email" placeholder="Email">
+    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+    <label for="contactno">Contact No</label>
+    <input type="text" th:field="*{contactno}" id="contactno" placeholder="Contact No">
+    <span th:if="${#fields.hasErrors('contactno')}" th:errors="*{contactno}"></span>
+    <br/>
+    <input type="submit" value="Add User">
+</form>
