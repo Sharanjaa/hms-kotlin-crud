@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlinkcrud.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlinkcrud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlinkcrud_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlinkcrud_main.iml" group="kotlinkcrud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlinkcrud_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlinkcrud_test.iml" group="kotlinkcrud" />
+    </modules>
+  </component>
+</project>
