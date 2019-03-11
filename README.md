@@ -25,3 +25,48 @@ The HMS Kotlin CRUD is a modern web app written in kotlin and it provides workin
 	<code>cd hms-kotlin-crud</code>
 	<code>./gradlew bootRun
 </code>
+
+<h2>Produce Coverage Reports</h2>
+
+<h4>Add Jacoco plugin in Build.Gradle</h4>
+
+JaCoCo is a free Java/Kotlin code coverage library distributed under the Eclipse Public License.
+
+<code>
+apply plugin: 'jacoco'
+</code>
+
+
+<code>
+test {
+    useJUnitPlatform()
+    jacoco {
+        destinationFile = file("${buildDir}/jacoco/test.exec")
+    }
+}
+	
+</code>
+
+
+<code>
+jacoco {
+    // You may modify the Jacoco version here
+    toolVersion = "0.8.2"
+}
+
+</code>
+
+<code>
+
+jacocoTestReport {
+    // Adjust the output of the test report
+    reports {
+        xml.enabled true
+        csv.enabled false
+    }
+ }
+</code>
+
+We got everything set up. We have a working Kotlin Project with JUnit 5. After executing the test task (also included during build task, by default), execute the jacocoTestReport task. If it succeeds, reports are available under <b>build/reports/jacoco/test</b>. Our configuration generates a HTML report and a XML report.
+
+<a href="https://ibb.co/SPTQ8Ny"><img src="https://i.ibb.co/s2S5GjR/Screenshot-from-2019-03-11-11-35-14.png" alt="Screenshot-from-2019-03-11-11-35-14" border="0"></a>
