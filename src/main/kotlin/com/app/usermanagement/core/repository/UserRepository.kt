@@ -12,20 +12,15 @@
  *
  */
 
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-    }
+package com.app.usermanagement.core.repository
+
+import com.app.usermanagement.core.model.User
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface UserRepository : JpaRepository<User, Long> {
+
+    // Finds by user first name and it ignores case
+    fun findByFirstnameContainingIgnoreCase(firstname: String): List<User>
 }
-rootProject.name = 'user-management'
-
-
-gradle.ext.springBootVersion = '2.0.0.M5'
-gradle.ext.kotlinVersion = '1.3.21'
-gradle.ext.springfoxVersion = '2.7.0'
-gradle.ext.logbackVersion = '1.2.3'
-gradle.ext.assertJVersion = '3.11.1'
-gradle.ext.jvmVersion = '1.8'
-
-gradle.ext.springBootGroupName = 'org.springframework.boot'
-gradle.ext.kotlinGroupName = 'org.jetbrains.kotlin'

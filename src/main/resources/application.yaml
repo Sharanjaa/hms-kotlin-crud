@@ -13,5 +13,10 @@ spring:
     password: 1234
 
 #log the request paylod
-logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
 logback.access.enabled: false
+
+current-date: "%d{yyyy-MM-dd}"
+
+server.servlet.context-path: /sharu
+api-url: http://localhost:8080/sharu
