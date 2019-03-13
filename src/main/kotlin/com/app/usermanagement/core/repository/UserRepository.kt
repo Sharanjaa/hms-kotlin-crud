@@ -15,12 +15,13 @@
 package com.app.usermanagement.core.repository
 
 import com.app.usermanagement.core.model.User
-import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UserRepository : JpaRepository<User, Long> {
-
+interface  UserRepository : MongoRepository<User, Long> {
     // Finds by user first name and it ignores case
     fun findByFirstnameContainingIgnoreCase(firstname: String): List<User>
+
+    fun findByFirstnameIgnoreCase(firstname: String): List<User>
 }

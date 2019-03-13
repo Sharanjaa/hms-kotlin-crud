@@ -13,7 +13,6 @@
 
 package com.app.usermanagement.core.model
 
-import com.app.usermanagement.core.enum.ErrorCode
 import com.app.usermanagement.core.enum.ResponseCode
 
 class ApplicationResponse<T>(
@@ -24,6 +23,6 @@ class ApplicationResponse<T>(
 ) {}
 
 class ApplicationResponseError(
-        val errorCode: Int = ErrorCode.Unknown.id,
-        val errorMesage: String = ErrorCode.Unknown.msg) {
+        val errorCode: ResponseCode = ResponseCode.UNKNOWN,
+        val errorMesage: String? = ResponseCode.UNKNOWN.msg) {
 }

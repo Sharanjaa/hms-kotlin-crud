@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service
 import java.util.*
 
 @Service("userService")
-class UserServiceImpl(private val userRepository: UserRepository) : UserService {
+class UserServiceImpl(private val userRepository: UserRepository, private val generatorService: SequenceGeneratorServiceImpl) : UserService {
 
     override fun findAll(): List<User> {
         try {
@@ -33,7 +33,11 @@ class UserServiceImpl(private val userRepository: UserRepository) : UserService 
 
     override fun findById(id: Long): Optional<User> {
         try {
-            return userRepository.findById(id)
+            if (!userRepository.findById(id).isPresent) {
+                throw ServiceException(null, ResponseCode.USER_DOES_NOT_EXISTS)
+            } else {
+                return userRepository.findById(id)
+            }
         } catch (e: DataAccessException) {
             throw ServiceException(e, ResponseCode.DATABASE_ERROR)
         }
@@ -41,6 +45,9 @@ class UserServiceImpl(private val userRepository: UserRepository) : UserService 
 
     override fun findByFirstName(firstName: String): List<User> {
         try {
+            if(!userRepository.findByFirstnameContainingIgnoreCase(firstName).isNotEmpty()){
+                throw ServiceException(null, ResponseCode.USER_DOES_NOT_EXISTS)
+            }
             return userRepository.findByFirstnameContainingIgnoreCase(firstName)
         } catch (e: DataAccessException) {
             throw ServiceException(e, ResponseCode.DATABASE_ERROR)
@@ -50,9 +57,10 @@ class UserServiceImpl(private val userRepository: UserRepository) : UserService 
 
     override fun add(user: User): User {
         try {
-            if (findByFirstName(user.firstname).isNotEmpty()) {
+            if (userRepository.findByFirstnameIgnoreCase(user.firstname).isNotEmpty()) {
                 throw ServiceException(null, ResponseCode.USER_ALREADY_EXISTS)
             }
+            user.id = generatorService.generateSequence(user.seqname)!!
             return userRepository.save(user)
         } catch (e: DataAccessException) {
             throw ServiceException(e, ResponseCode.DATABASE_ERROR)
@@ -65,6 +73,7 @@ class UserServiceImpl(private val userRepository: UserRepository) : UserService 
             if (!findById(user.id).isPresent) {
                 throw ServiceException(null, ResponseCode.USER_DOES_NOT_EXISTS)
             }
+
             return userRepository.save(user)
         } catch (e: DataAccessException) {
             throw ServiceException(e, ResponseCode.DATABASE_ERROR)

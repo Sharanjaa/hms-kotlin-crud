@@ -21,11 +21,14 @@ import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.http.converter.HttpMessageNotReadableException
+import org.springframework.web.HttpMediaTypeNotSupportedException
+import org.springframework.web.HttpRequestMethodNotSupportedException
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.MissingServletRequestParameterException
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException
+import org.springframework.web.servlet.NoHandlerFoundException
 import javax.servlet.http.HttpServletResponse
 
 @ControllerAdvice
@@ -33,19 +36,8 @@ class APIExceptionController {
 
     private val logger = LoggerFactory.getLogger(APIExceptionController::class.java)
 
-    fun getResponseEntity(exceptionDetail: ResponseCode): ApplicationResponse<Nothing> {
-
-        val errorResponse = ApplicationResponse(
-                exceptionDetail.id,
-                exceptionDetail.msg,
-                null
-        )
-
-        return errorResponse
-    }
-
     fun getResponseEntity(cause: Throwable, exceptionDetail: ResponseCode): ApplicationResponse<Nothing> {
-        val applicationResponseError = ApplicationResponseError(exceptionDetail.id,
+        val applicationResponseError = ApplicationResponseError(exceptionDetail,
                 cause.message.toString())
 
         val errorResponse = ApplicationResponse(
@@ -63,11 +55,11 @@ class APIExceptionController {
             ResponseEntity<ApplicationResponse<Nothing>> {
 
         if (ex.code == ResponseCode.USER_DOES_NOT_EXISTS)
-            return ResponseEntity(getResponseEntity(ResponseCode.USER_DOES_NOT_EXISTS), HttpStatus.BAD_REQUEST)
+            return ResponseEntity(getResponseEntity(ex, ResponseCode.USER_DOES_NOT_EXISTS), HttpStatus.BAD_REQUEST)
         if (ex.code == ResponseCode.USER_ALREADY_EXISTS) {
-            return ResponseEntity(getResponseEntity(ResponseCode.USER_ALREADY_EXISTS), HttpStatus.BAD_REQUEST)
+            return ResponseEntity(getResponseEntity(ex, ResponseCode.USER_ALREADY_EXISTS), HttpStatus.BAD_REQUEST)
         } else {
-            return ResponseEntity(getResponseEntity(ResponseCode.INTERNAL_SERVER_ERROR), HttpStatus.INTERNAL_SERVER_ERROR)
+            return ResponseEntity(getResponseEntity(ex, ResponseCode.INTERNAL_SERVER_ERROR), HttpStatus.INTERNAL_SERVER_ERROR)
         }
 
     }
@@ -103,6 +95,30 @@ class APIExceptionController {
 
         return ResponseEntity(getResponseEntity(ex, ResponseCode.METHOD_ARGUMENT_TYPE_MISMATCH_EXCEPTION),
                 HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(NoHandlerFoundException::class)
+    fun handleRequestUrl(ex: NoHandlerFoundException, response: HttpServletResponse):
+            ResponseEntity<ApplicationResponse<Nothing>> {
+
+        return ResponseEntity(getResponseEntity(ex, ResponseCode.REQUEST_URL_FOUND_EXCEPTION),
+                HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(HttpRequestMethodNotSupportedException::class)
+    fun handleHttpRequest(ex: HttpRequestMethodNotSupportedException, response: HttpServletResponse):
+            ResponseEntity<ApplicationResponse<Nothing>> {
+
+        return ResponseEntity(getResponseEntity(ex, ResponseCode.HTTP_REQUEST_METHOD_NOT_SUPPORTED_EXCEPTION),
+                HttpStatus.METHOD_NOT_ALLOWED);
+    }
+
+    @ExceptionHandler(HttpMediaTypeNotSupportedException::class)
+    fun handleRequestMediaType(ex: HttpMediaTypeNotSupportedException, response: HttpServletResponse):
+            ResponseEntity<ApplicationResponse<Nothing>> {
+
+        return ResponseEntity(getResponseEntity(ex, ResponseCode.UNSUPPORTED_MEDIA_TYPE),
+                HttpStatus.UNSUPPORTED_MEDIA_TYPE);
     }
 
     //Handles  all other erros and marked it as 500 (Internal Server Error)

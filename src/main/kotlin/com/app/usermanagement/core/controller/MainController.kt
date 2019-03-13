@@ -129,7 +129,7 @@ class MainController(private val userService: UserServiceImpl) {
                     ResponseCode.NO_CONTENT.id,
                     ResponseCode.NO_CONTENT.msg,
                     null)
-            return ResponseEntity(applicationResponse, HttpStatus.NO_CONTENT)
+            return ResponseEntity(applicationResponse, HttpStatus.OK)
 
         } catch (ex: Exception) {
             logger.error("Error occurred: ", ex.message)

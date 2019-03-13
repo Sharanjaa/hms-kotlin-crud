@@ -13,7 +13,6 @@
 
 package com.app.usermanagement.core.service
 
-import com.app.usermanagement.core.enum.ErrorCode
 import com.app.usermanagement.core.enum.ResponseCode
 
 class ServiceException(cause: Throwable?, var code:ResponseCode ) : Exception(code.msg, cause) {

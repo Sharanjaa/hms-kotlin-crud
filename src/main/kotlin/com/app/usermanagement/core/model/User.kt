@@ -14,15 +14,22 @@
 
 package com.app.usermanagement.core.model
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+//import javax.persistence.Entity
+//import javax.persistence.GeneratedValue
+//import javax.persistence.GenerationType
+//import javax.persistence.Id
+import com.fasterxml.jackson.annotation.JsonIgnore
+import org.springframework.data.annotation.Id
+import org.springframework.data.annotation.Transient
+import org.springframework.data.mongodb.core.mapping.Document
 import javax.validation.constraints.NotBlank
 
-@Entity
+//@Entity
+@Document
 data class User(
-        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+        @Id
+//        @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long = 0,
 
         @get: NotBlank(message = "First Name is mandatory")
@@ -36,4 +43,8 @@ data class User(
 
         // This is an optional field
         val contactno: Int = 0
-)
+) {
+    @Transient
+    @JsonIgnore
+    val seqname: String = "users_sequence"
+}
