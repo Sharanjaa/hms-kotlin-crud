@@ -1,0 +1,527 @@
+2019-03-14 10:44:20,857 [INFO] from com.hms.usermanagement.KotlinkcrudApplication$Companion.logStarting(50) in restartedMain - Starting KotlinkcrudApplication.Companion on sharanjaa-HP with PID 7546 (/home/sharanjaa/IdeaProjects/hms-kotlin-crud/out/production/classes started by sharanjaa in /home/sharanjaa/IdeaProjects/hms-kotlin-crud)
+2019-03-14 10:44:20,862 [INFO] from com.hms.usermanagement.KotlinkcrudApplication$Companion.logStartupProfileInfo(675) in restartedMain - No active profile set, falling back to default profiles: default
+2019-03-14 10:44:21,146 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo(227) in restartedMain - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-14 10:44:21,146 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo(227) in restartedMain - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-14 10:44:23,045 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(126) in restartedMain - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-14 10:44:23,123 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(182) in restartedMain - Finished Spring Data repository scanning in 72ms. Found 1 repository interfaces.
+2019-03-14 10:44:24,586 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(90) in restartedMain - Tomcat initialized with port(s): 8080 (http)
+2019-03-14 10:44:24,822 [INFO] from org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) in restartedMain - Root WebApplicationContext: initialization completed in 3675 ms
+2019-03-14 10:44:25,541 [INFO] from org.mongodb.driver.cluster.info(71) in restartedMain - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-14 10:44:25,543 [INFO] from org.mongodb.driver.cluster.info(71) in restartedMain - Adding discovered server localhost:27017 to client view of cluster
+2019-03-14 10:44:25,684 [INFO] from org.mongodb.driver.connection.info(71) in cluster-ClusterId{value='5c89e331803c2f1d7a9c9bcd', description='null'}-localhost:27017 - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2019-03-14 10:44:25,708 [INFO] from org.mongodb.driver.cluster.info(71) in cluster-ClusterId{value='5c89e331803c2f1d7a9c9bcd', description='null'}-localhost:27017 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16174924}
+2019-03-14 10:44:25,710 [INFO] from org.mongodb.driver.cluster.info(71) in cluster-ClusterId{value='5c89e331803c2f1d7a9c9bcd', description='null'}-localhost:27017 - Discovered cluster type of STANDALONE
+2019-03-14 10:44:26,129 [INFO] from org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(57) in restartedMain - LiveReload server is running on port 35729
+2019-03-14 10:44:27,673 [INFO] from springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) in restartedMain - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-14 10:44:27,853 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) in restartedMain - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-14 10:44:28,022 [INFO] from org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(61) in restartedMain - Adding welcome page template: index
+2019-03-14 10:44:28,185 [INFO] from springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) in restartedMain - Context refreshed
+2019-03-14 10:44:28,213 [INFO] from springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) in restartedMain - Found 1 custom documentation plugin(s)
+2019-03-14 10:44:28,312 [INFO] from springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) in restartedMain - Scanning for api listing references
+2019-03-14 10:44:28,613 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) in restartedMain - Tomcat started on port(s): 8080 (http) with context path '/sharu'
+2019-03-14 10:44:28,616 [INFO] from com.hms.usermanagement.KotlinkcrudApplication$Companion.logStarted(59) in restartedMain - Started KotlinkcrudApplication.Companion in 8.784 seconds (JVM running for 11.145)
+2019-03-14 10:44:28,619 [INFO] from com.hms.usermanagement.KotlinkcrudApplication.main(30) in restartedMain - --Application Started--
+2019-03-14 10:44:30,486 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) in Thread-25 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-14 11:08:37,909 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:08:37,923 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:08:37,925 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:08:38,526 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:08:38,809 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:08:39,470 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78f5c518, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f48b3d2, com.ninjasquad.springmockk.MockkTestExecutionListener@34f7234e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@753432a2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@23bff419, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4983159f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@44e3a2b2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@101639ae, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@4c550889, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1d2bd371, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@44040454, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@65fe9e33, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@18bc345, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@42f8285e]
+2019-03-14 11:08:40,167 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@753432a2] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@4d8539de]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted
+2019-03-14 11:09:27,656 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:09:27,668 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:09:27,670 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:09:28,118 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:09:28,374 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:09:29,002 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56303b57, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b2a01d4, com.ninjasquad.springmockk.MockkTestExecutionListener@8692d67, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78f5c518, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f48b3d2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34f7234e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@753432a2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23bff419, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@4983159f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@44e3a2b2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@101639ae, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c550889, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d2bd371, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44040454]
+2019-03-14 11:09:30,546 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78f5c518] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@6a933be2]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted
+2019-03-14 11:10:31,256 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:10:31,268 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:10:31,271 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:10:31,671 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:10:31,922 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:10:32,597 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13518f37, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7cbc3762, com.ninjasquad.springmockk.MockkTestExecutionListener@3a6f2de3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49872d67, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@56303b57, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b2a01d4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@8692d67, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@78f5c518, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@2f48b3d2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@34f7234e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@753432a2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@23bff419, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4983159f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44e3a2b2]
+2019-03-14 11:10:34,844 [INFO] from com.hms.usermanagement.web.controllerTest.UserControllerTests.logStarting(50) in main - Starting UserControllerTests on sharanjaa-HP with PID 8495 (started by sharanjaa in /home/sharanjaa/IdeaProjects/hms-kotlin-crud)
+2019-03-14 11:10:34,846 [INFO] from com.hms.usermanagement.web.controllerTest.UserControllerTests.logStartupProfileInfo(675) in main - No active profile set, falling back to default profiles: default
+2019-03-14 11:10:36,194 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(126) in main - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-14 11:10:36,327 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(182) in main - Finished Spring Data repository scanning in 123ms. Found 1 repository interfaces.
+2019-03-14 11:10:37,640 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(90) in main - Tomcat initialized with port(s): 0 (http)
+2019-03-14 11:10:37,863 [INFO] from org.springframework.web.context.ContextLoader.prepareWebApplicationContext(296) in main - Root WebApplicationContext: initialization completed in 2983 ms
+2019-03-14 11:10:38,393 [INFO] from org.mongodb.driver.cluster.info(71) in main - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-14 11:10:38,394 [INFO] from org.mongodb.driver.cluster.info(71) in main - Adding discovered server localhost:27017 to client view of cluster
+2019-03-14 11:10:38,511 [INFO] from org.mongodb.driver.connection.info(71) in cluster-ClusterId{value='5c89e956803c2f212f47acd3', description='null'}-localhost:27017 - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2019-03-14 11:10:38,522 [INFO] from org.mongodb.driver.cluster.info(71) in cluster-ClusterId{value='5c89e956803c2f212f47acd3', description='null'}-localhost:27017 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5311390}
+2019-03-14 11:10:38,526 [INFO] from org.mongodb.driver.cluster.info(71) in cluster-ClusterId{value='5c89e956803c2f212f47acd3', description='null'}-localhost:27017 - Discovered cluster type of STANDALONE
+2019-03-14 11:10:40,144 [INFO] from springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(69) in main - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-14 11:10:40,818 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize(171) in main - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-14 11:10:41,118 [INFO] from org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(61) in main - Adding welcome page template: index
+2019-03-14 11:10:41,403 [INFO] from springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(147) in main - Context refreshed
+2019-03-14 11:10:41,437 [INFO] from springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(150) in main - Found 1 custom documentation plugin(s)
+2019-03-14 11:10:41,539 [INFO] from springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(41) in main - Scanning for api listing references
+2019-03-14 11:10:41,888 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(204) in main - Tomcat started on port(s): 42351 (http) with context path '/sharu'
+2019-03-14 11:10:41,892 [INFO] from com.hms.usermanagement.web.controllerTest.UserControllerTests.logStarted(59) in main - Started UserControllerTests in 7.655 seconds (JVM running for 12.08)
+2019-03-14 11:10:41,962 [INFO] from org.springframework.mock.web.MockServletContext.log(444) in main - Initializing Spring TestDispatcherServlet ''
+2019-03-14 11:10:41,963 [INFO] from org.springframework.test.web.servlet.TestDispatcherServlet.initServletBean(524) in main - Initializing Servlet ''
+2019-03-14 11:10:41,964 [INFO] from org.springframework.test.web.servlet.TestDispatcherServlet.initServletBean(546) in main - Completed initialization in 1 ms
+2019-03-14 11:10:42,233 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown(208) in Thread-4 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-14 11:11:31,257 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:11:31,268 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:11:31,270 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:11:31,582 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:11:31,943 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:11:32,604 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56303b57, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b2a01d4, com.ninjasquad.springmockk.MockkTestExecutionListener@8692d67, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78f5c518, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f48b3d2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@34f7234e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@753432a2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23bff419, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@4983159f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@44e3a2b2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@101639ae, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c550889, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d2bd371, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44040454]
+2019-03-14 11:11:34,086 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78f5c518] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@6a933be2]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted
+2019-03-14 11:12:01,891 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:12:01,902 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:12:01,904 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:12:02,252 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:12:02,443 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:12:03,267 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65fe9e33, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18bc345, com.ninjasquad.springmockk.MockkTestExecutionListener@42f8285e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@26bab2f1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3724af13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@68ead359, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b53bcc2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@180da663, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@a43ce46, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@340da44c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@424ebba3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@37052337, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2320fa6f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a560583]
+2019-03-14 11:12:04,529 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@26bab2f1] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@28cb9120]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted
+2019-03-14 11:12:43,998 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:12:44,019 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:12:44,022 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:12:44,343 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:12:44,565 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:12:45,111 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@bb095, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@777c350f, com.ninjasquad.springmockk.MockkTestExecutionListener@27aae97b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c9e38, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5d1e09bc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bdc8b5d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3bcd426c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5f14a673, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@726a17c4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5dc3fcb7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@c4c0b41, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76911385, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5467eea4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@160396db]
+2019-03-14 11:12:46,039 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c9e38] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@1115433e]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted
+2019-03-14 11:13:29,991 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration(308) in main - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests], using SpringBootContextLoader
+2019-03-14 11:13:30,040 [INFO] from org.springframework.test.context.support.AbstractContextLoader.generateDefaultLocations(264) in main - Could not detect default resource locations for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-03-14 11:13:30,042 [INFO] from org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses(83) in main - Could not detect default configuration classes for test class [com.hms.usermanagement.web.controllerTest.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-03-14 11:13:30,681 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(247) in main - Found @SpringBootConfiguration com.hms.usermanagement.KotlinkcrudApplication for test class com.hms.usermanagement.web.controllerTest.UserControllerTests
+2019-03-14 11:13:31,054 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(248) in main - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [com.ninjasquad.springmockk.MockkTestExecutionListener, com.ninjasquad.springmockk.ClearMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-03-14 11:13:32,011 [INFO] from org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getTestExecutionListeners(177) in main - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@777c350f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27aae97b, com.ninjasquad.springmockk.MockkTestExecutionListener@4c9e38, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d1e09bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4bdc8b5d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bcd426c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5f14a673, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@726a17c4, com.ninjasquad.springmockk.ClearMocksTestExecutionListener@5dc3fcb7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@c4c0b41, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76911385, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5467eea4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@160396db, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a799159]
+2019-03-14 11:13:32,969 [ERROR] from org.springframework.test.context.TestContextManager.prepareTestInstance(250) in main - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d1e09bc] to prepare test instance [com.hms.usermanagement.web.controllerTest.UserControllerTests@3e5fd2b1]
+org.mockito.exceptions.misusing.InjectMocksException: 
+Cannot instantiate @InjectMocks field named 'controller' of type 'class com.hms.usermanagement.web.controller.UserController'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:68)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:53)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassTestDescriptor.java:349)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:348)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:270)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$2(ClassTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$3(ClassTestDescriptor.java:263)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$4(ClassTestDescriptor.java:262)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$before$0(ClassTestDescriptor.java:192)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:191)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.before(ClassTestDescriptor.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:74)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Parameter specified as non-null is null: method com.hms.usermanagement.web.controller.UserController.<init>, parameter userService
+	at com.hms.usermanagement.web.controller.UserController.<init>(UserController.kt)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.mockito.internal.util.reflection.FieldInitializer$ParameterizedConstructorInstantiator.instantiate(FieldInitializer.java:269)
+	at org.mockito.internal.util.reflection.FieldInitializer.acquireFieldInstance(FieldInitializer.java:137)
+	at org.mockito.internal.util.reflection.FieldInitializer.initialize(FieldInitializer.java:91)
+	at org.mockito.internal.configuration.injection.ConstructorInjection.processInjection(ConstructorInjection.java:46)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:68)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.relayProcessToNextStrategy(MockInjectionStrategy.java:89)
+	at org.mockito.internal.configuration.injection.MockInjectionStrategy.process(MockInjectionStrategy.java:71)
+	at org.mockito.internal.configuration.injection.MockInjection$OngoingMockInjection.apply(MockInjection.java:92)
+	at org.mockito.internal.configuration.DefaultInjectionEngine.injectMocksOnFields(DefaultInjectionEngine.java:25)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.injectMocks(InjectingAnnotationEngine.java:87)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.processInjectMocks(InjectingAnnotationEngine.java:48)
+	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:42)
+	at org.mockito.MockitoAnnotations.initMocks(MockitoAnnotations.java:69)
+	... 47 common frames omitted

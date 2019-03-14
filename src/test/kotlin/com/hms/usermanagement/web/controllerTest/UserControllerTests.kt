@@ -11,10 +11,10 @@
  * property rights in these materials.
  */
 
-package com.hms.usermanagement.controllerTest
+package com.hms.usermanagement.web.controllerTest
 
-import com.app.usermanagement.core.controller.UserController
 import com.hms.usermanagement.core.repository.UserRepository
+import com.hms.usermanagement.web.controller.UserController
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.mockito.InjectMocks

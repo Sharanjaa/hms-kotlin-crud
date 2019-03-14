@@ -24,3 +24,6 @@ interface  UserRepository : MongoRepository<User, Long> {
 
     fun findByFirstnameIgnoreCase(firstname: String): List<User>
 }
+
+
+

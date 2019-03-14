@@ -11,7 +11,7 @@
  * property rights in these materials.
  */
 
-package com.hms.usermanagement.controllerTest
+package com.hms.usermanagement.core.controllerTest
 
 import com.hms.usermanagement.core.controller.MainController
 import com.hms.usermanagement.core.model.User

@@ -23,6 +23,8 @@ import java.util.*
 @Service("userService")
 class UserServiceImpl(private val userRepository: UserRepository, private val generatorService: SequenceGeneratorServiceImpl) : UserService {
 
+
+
     override fun findAll(): List<User> {
         try {
             return userRepository.findAll()
