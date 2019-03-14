@@ -1,6 +1,6 @@
-<h1>Hms-kotlin-crud</h1>
+<h1>hme-usermanage-crud</h1>
 
-The HMS Kotlin CRUD is a modern web app written in kotlin and it provides working examples of how to integrate your app with ORM. Specifically, this sample application demonstrates the following:
+The HMS User-management CRUD is a modern web app written in kotlin and it provides working examples of how to integrate your app with ORM. Specifically, this sample application demonstrates the following:
 <ul>
     <li>Create, Read, Query, Update, Delete entities.</li>
     <li>All operations are performed using Kotlin and Gradle.</li>
