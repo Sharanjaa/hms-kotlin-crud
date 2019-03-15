@@ -13,10 +13,10 @@
 
 package com.hms.usermanagement.core.controllerTest
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.hms.usermanagement.core.controller.MainController
 import com.hms.usermanagement.core.model.User
-import com.hms.usermanagement.core.repository.UserRepository
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.hms.usermanagement.core.service.UserService
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
@@ -46,11 +46,11 @@ class MainControllerTests(@Autowired private val restTemplate: TestRestTemplate)
     lateinit var controller: MainController
 
     @Mock
-    lateinit var respository: UserRepository
+    lateinit var service: UserService
 
     @Test
     fun findAll() {
-        val content = """[{"id":7,"firstname":"string","lastname":"string","email":"string","contactno":0},{"id":10,"firstname":"fDSF","lastname":"x ","email":"AS","contactno":0},{"id":11,"firstname":"xv","lastname":"x ","email":"v","contactno":0}]"""
+        val content="""{"statusCode":200,"message":"User Details Added Successfully","data":[{"id":2,"firstname":"string1","lastname":"string","email":"string","contactno":0},{"id":5,"firstname":"string3","lastname":"string","email":"string","contactno":0},{"id":6,"firstname":"string4","lastname":"string","email":"string","contactno":0},{"id":9,"firstname":"string45","lastname":"string","email":"string","contactno":0},{"id":10,"firstname":"string","lastname":"string","email":"string","contactno":0},{"id":11,"firstname":"strwing","lastname":"string","email":"string","contactno":0},{"id":12,"firstname":"Deeps","lastname":"Senthu","email":"sharu@gmail.com","contactno":4234}],"error":null}"""
         val response = restTemplate.getForObject<String>("/api/users")
         assertThat(content).isEqualTo(response)
     }
@@ -61,8 +61,18 @@ class MainControllerTests(@Autowired private val restTemplate: TestRestTemplate)
         var user = User(1, "Test", "Test Content", "test", 1324)
         var jsonData = jacksonObjectMapper().writeValueAsString(user)
         mvc.perform(MockMvcRequestBuilders.post("/api/users/").contentType(MediaType.APPLICATION_JSON).content(jsonData))
-                .andExpect(MockMvcResultMatchers.status().isOk)
+                .andExpect(MockMvcResultMatchers.status().isCreated)
                 .andDo(MockMvcResultHandlers.print())
                 .andReturn()
     }
+
+    @Test
+    fun searhUserErrorCheck() {
+        mvc=MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
+        val content = """{"statusCode":400,"message":"Required String parameter 'field' is not present","data":null,"error":{"errorCode":"MISSING_SERVLET_REQUEST_PARAMETER_EXCEPTION","errorMesage":"Required String parameter 'name' is not present"}}"""
+        val response=restTemplate.getForObject<String>("/api/users/search?nae/strwing")
+        assertThat(content).isEqualTo(response)
+    }
+
+
 }

@@ -19,6 +19,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface  UserRepository : MongoRepository<User, Long> {
+
     // Finds by user first name and it ignores case
     fun findByFirstnameContainingIgnoreCase(firstname: String): List<User>
 

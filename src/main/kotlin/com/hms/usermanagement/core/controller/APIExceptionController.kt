@@ -11,7 +11,7 @@
  * property rights in these materials.
  */
 
-package com.app.usermanagement.core.service
+package com.hms.usermanagement.core.controller
 
 import com.hms.usermanagement.core.enum.ResponseCode
 import com.hms.usermanagement.core.model.ApplicationResponse

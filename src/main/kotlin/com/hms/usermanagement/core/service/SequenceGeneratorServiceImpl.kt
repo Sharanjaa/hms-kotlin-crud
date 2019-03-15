@@ -27,7 +27,10 @@ import org.springframework.data.mongodb.core.query.Query.query
 
 
 @Service("sequenceGeneratorService")
-class SequenceGeneratorServiceImpl(private var mongoOperations: MongoOperations) : SequenceGeneratorService {
+class SequenceGeneratorServiceImpl : SequenceGeneratorService {
+
+    @Autowired
+    lateinit var mongoOperations: MongoOperations
 
     override fun generateSequence(seqName: String): Long? {
 

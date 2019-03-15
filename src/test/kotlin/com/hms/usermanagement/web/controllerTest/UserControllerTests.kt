@@ -13,7 +13,7 @@
 
 package com.hms.usermanagement.web.controllerTest
 
-import com.hms.usermanagement.core.repository.UserRepository
+import com.hms.usermanagement.core.service.UserService
 import com.hms.usermanagement.web.controller.UserController
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
@@ -22,6 +22,7 @@ import org.mockito.Mock
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
 import org.springframework.test.context.junit.jupiter.SpringExtension
+import org.springframework.test.util.ReflectionTestUtils
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
@@ -38,10 +39,11 @@ class UserControllerTests {
     lateinit var controller: UserController
 
     @Mock
-    lateinit var respository: UserRepository
+    lateinit var service: UserService
 
     @Test
     fun createUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
         mvc.perform(MockMvcRequestBuilders.post("/adduser")
                 .param("firstname", "Deeps")
@@ -55,6 +57,7 @@ class UserControllerTests {
 
     @Test
     fun getUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
         mvc.perform(MockMvcRequestBuilders.get("/"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
@@ -63,6 +66,7 @@ class UserControllerTests {
 
     @Test
     fun searchUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
         mvc.perform(MockMvcRequestBuilders.get("/search")
                 .param("firstname", "string"))
@@ -72,6 +76,7 @@ class UserControllerTests {
 
     @Test
     fun addUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
         mvc.perform(MockMvcRequestBuilders.get("/add"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
@@ -80,6 +85,7 @@ class UserControllerTests {
 
     @Test
     fun updateUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
         mvc.perform(MockMvcRequestBuilders.post("/update/7")
                 .param("id", 7.toString())
@@ -94,16 +100,18 @@ class UserControllerTests {
 
     @Test
     fun viewUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
-        mvc.perform(MockMvcRequestBuilders.get("/view/10"))
+        mvc.perform(MockMvcRequestBuilders.get("/view/8"))
                 .andExpect(MockMvcResultMatchers.status().isOk)
 //                .andExpect(MockMvcResultMatchers.content().string(containsString("String")))
     }
 
     @Test
     fun editUser() {
+        ReflectionTestUtils.setField(controller, "apiUrl", "http://localhost:8080/sharu")
         mvc = MockMvcBuilders.standaloneSetup(controller).setMessageConverters(MappingJackson2HttpMessageConverter()).build()
-        mvc.perform(MockMvcRequestBuilders.get("/edit/10"))
+        mvc.perform(MockMvcRequestBuilders.get("/edit/7"))
                 .andExpect(MockMvcResultMatchers.status().isOk)
 //                .andExpect(MockMvcResultMatchers.content().string(containsString("String")))
     }

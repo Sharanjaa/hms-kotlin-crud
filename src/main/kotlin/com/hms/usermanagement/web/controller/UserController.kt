@@ -13,8 +13,6 @@
 
 package com.hms.usermanagement.web.controller
 
-import com.hms.usermanagement.core.model.User
-import com.hms.usermanagement.core.service.UserServiceImpl
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
 import com.github.kittinunf.fuel.httpDelete
@@ -22,6 +20,9 @@ import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.httpPost
 import com.github.kittinunf.fuel.httpPut
 import com.google.gson.Gson
+import com.hms.usermanagement.core.model.User
+import com.hms.usermanagement.core.service.UserService
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Controller
@@ -35,10 +36,13 @@ import javax.validation.Valid
 
 
 @Controller
-class UserController(private val userService: UserServiceImpl) {
+class UserController {
+
+    @Autowired
+    lateinit var userService: UserService
 
     @Value("\${api-url}")
-    private val apiUrl: String? = null
+    val apiUrl: String?=null
 
     fun getUsers(): List<User>? {
         val (request, response, result) = "$apiUrl/api/users"
